@@ -1,8 +1,0 @@
-@font-face {
-  font-family: sansation regular;
-  font-style: normal;
-  font-weight: 400;
-  src: local("Sansation Regular"), local("Sansation-Regular"),
-    url(/fonts/sansation-regular.woff) format("woff"),
-    url(/fonts/sansation-regular.ttf) format("truetype");
-}
