@@ -35,7 +35,7 @@ export default function Home() {
         <Stack
           minHeight="100vh"
           background="linear-gradient(90deg, rgba(224, 48, 47, 1) 0%, rgba(50, 129, 221, 1) 100%)"
-          minWidth="100vw"
+          minWidth="10%"
           alignItems="center"
           justifyContent="center"
         >
@@ -98,14 +98,14 @@ export default function Home() {
         <Stack
           minHeight="100vh"
           background="gray.200"
-          minWidth="100vw"
+          minWidth="100%"
           alignItems="center"
           justifyContent="center"
         >
           <Box
             position="absolute"
             background="linear-gradient(90deg, rgba(224, 48, 47, 1) 0%, rgba(50, 129, 221, 1) 100%)"
-            width="100vw"
+            width="100%"
             height="10vh"
             top="100vh"
           >
@@ -116,7 +116,7 @@ export default function Home() {
               color="gray.200"
             />
           </Box>
-          <Heading
+          {/* <Heading
             alignSelf="center"
             as="h1"
             size="2xl"
@@ -143,7 +143,7 @@ export default function Home() {
             <Link href="mailto:jakob.kraus10@gmail.com" isExternal>
               jakob.kraus10@gmail.com
             </Link>
-          </Text>
+          </Text> */}
         </Stack>
       </ChakraProvider>
     </div>
