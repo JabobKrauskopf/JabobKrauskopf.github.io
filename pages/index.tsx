@@ -5,9 +5,25 @@ import {
   Flex,
   Text,
   Link,
+  Box,
 } from "@chakra-ui/core";
+import { createIcon } from "@chakra-ui/icons";
 import { FaGithub, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 import Head from "next/head";
+import React from "react";
+
+export const Divider = createIcon({
+  displayName: "Divider",
+  viewBox: "0 0 169 18",
+  path: (
+    <>
+      <path
+        fill="currentColor"
+        d="M0,18C0,18,34.4-11.1,54.8,9s43.1-19.7,66.1-6S169,18,169,18L0,18z"
+      />
+    </>
+  ),
+});
 
 export default function Home() {
   return (
@@ -18,7 +34,7 @@ export default function Home() {
       <ChakraProvider resetCSS={true}>
         <Stack
           minHeight="100vh"
-          background="linear-gradient(95deg, rgba(224, 48, 47, 1) 0%, rgba(50, 129, 221, 1) 100%)"
+          background="linear-gradient(90deg, rgba(224, 48, 47, 1) 0%, rgba(50, 129, 221, 1) 100%)"
           minWidth="100vw"
           alignItems="center"
           justifyContent="center"
@@ -78,6 +94,56 @@ export default function Home() {
               </Link>
             </Flex>
           </Stack>
+        </Stack>
+        <Stack
+          minHeight="100vh"
+          background="gray.200"
+          minWidth="100vw"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Box
+            position="absolute"
+            background="linear-gradient(90deg, rgba(224, 48, 47, 1) 0%, rgba(50, 129, 221, 1) 100%)"
+            width="100vw"
+            height="10vh"
+            top="100vh"
+          >
+            <Divider
+              width="100%"
+              preserveAspectRatio="none"
+              height="10vh"
+              color="gray.200"
+            />
+          </Box>
+          <Heading
+            alignSelf="center"
+            as="h1"
+            size="2xl"
+            width="fit-content"
+            paddingX="0.5rem"
+            background="linear-gradient(90deg, rgba(224, 48, 47, 1) 0%, rgba(50, 129, 221, 1) 100%)"
+            borderRadius="5px"
+            color="gray.200"
+            textShadow="1px 3px 6px rgba(0, 0, 0, .1)"
+            fontFamily="'Sansation Regular'"
+          >
+            Contact Me
+          </Heading>
+          <Text
+            maxW="6xl"
+            fontSize="1.2em"
+            fontFamily="'Sansation Regular'"
+            paddingX="0.3rem"
+            background="linear-gradient(90deg, rgba(224, 48, 47, 1) 0%, rgba(50, 129, 221, 1) 100%)"
+            borderRadius="5px"
+            color="gray.200"
+          >
+            Email to:{" "}
+            <Link href="mailto:jakob.kraus10@gmail.com" isExternal>
+              jakob.kraus10@gmail.com
+            </Link>
+          </Text>
         </Stack>
       </ChakraProvider>
     </div>
