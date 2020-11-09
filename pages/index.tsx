@@ -50,7 +50,7 @@ export default function Home() {
             <Box
               position="fixed"
               boxSize="2rem"
-              top="85vh"
+              top="80vh"
               right="1rem"
               zIndex="19"
               background={`rgba(0, 0, 0, ${
@@ -61,7 +61,7 @@ export default function Home() {
             <Box
               position="fixed"
               boxSize="2rem"
-              top="85vh"
+              top="80vh"
               right="1rem"
               zIndex="20"
               style={{ mixBlendMode: "difference" }}
@@ -84,7 +84,7 @@ export default function Home() {
             <Box
               position="fixed"
               boxSize="2rem"
-              top="calc(85vh + 3rem)"
+              top="calc(80vh + 3rem)"
               right="1vw"
               zIndex="19"
               background={`rgba(0, 0, 0, ${
@@ -96,7 +96,7 @@ export default function Home() {
             <Box
               position="fixed"
               boxSize="2rem"
-              top="calc(85vh + 3rem)"
+              top="calc(80vh + 3rem)"
               right="1rem"
               zIndex="20"
               style={{ mixBlendMode: "difference" }}
@@ -104,7 +104,7 @@ export default function Home() {
               placeItems="center"
             >
               <ArrowDownIcon
-                boxSize="2vw"
+                boxSize="2rem"
                 color={`rgba(255, 255, 255, ${Math.max(
                   0,
                   Math.min(1, 1 - scrollTop / (innerHeight / 2))
