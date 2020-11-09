@@ -85,7 +85,7 @@ export default function Home() {
               position="fixed"
               boxSize="2rem"
               top="calc(80vh + 3rem)"
-              right="1vw"
+              right="1rem"
               zIndex="19"
               background={`rgba(0, 0, 0, ${
                 Math.max(0, Math.min(1, 1 - scrollTop / (innerHeight / 2))) *
