@@ -46,12 +46,12 @@ export default function Home() {
       </Head>
       <ChakraProvider resetCSS={true}>
         {scrollTop === 0 ? null : (
-          <>
+          <Link href="#top">
             <Box
               position="fixed"
-              boxSize="25px"
+              boxSize="2vw"
               top="85vh"
-              right="10px"
+              right="1vw"
               zIndex="19"
               background={`rgba(0, 0, 0, ${
                 Math.max(0, Math.min(1, scrollTop / (innerHeight / 2))) * 0.2
@@ -60,35 +60,33 @@ export default function Home() {
             />
             <Box
               position="fixed"
-              boxSize="25px"
+              boxSize="2vw"
               top="85vh"
-              right="10px"
+              right="1vw"
               zIndex="20"
               style={{ mixBlendMode: "difference" }}
               display="grid"
               placeItems="center"
               cursor={scrollTop / (innerHeight / 2) < 2 ? "pointer" : "unset"}
             >
-              <Link href="#top">
-                <ArrowUpIcon
-                  boxSize="25px"
-                  color={`rgba(255, 255, 255, ${Math.max(
-                    0,
-                    Math.min(1, scrollTop / (innerHeight / 2))
-                  )})`}
-                  borderRadius="4px"
-                />
-              </Link>
+              <ArrowUpIcon
+                boxSize="2vw"
+                color={`rgba(255, 255, 255, ${Math.max(
+                  0,
+                  Math.min(1, scrollTop / (innerHeight / 2))
+                )})`}
+                borderRadius="4px"
+              />
             </Box>
-          </>
+          </Link>
         )}
         {scrollTop / (innerHeight / 2) >= 2 ? null : (
-          <>
+          <Link href="#wip">
             <Box
               position="fixed"
-              boxSize="25px"
+              boxSize="2vw"
               top="90vh"
-              right="10px"
+              right="1vw"
               zIndex="19"
               background={`rgba(0, 0, 0, ${
                 Math.max(0, Math.min(1, 1 - scrollTop / (innerHeight / 2))) *
@@ -98,26 +96,24 @@ export default function Home() {
             />
             <Box
               position="fixed"
-              boxSize="25px"
+              boxSize="2vw"
               top="90vh"
-              right="10px"
+              right="1vw"
               zIndex="20"
               style={{ mixBlendMode: "difference" }}
               display="grid"
               placeItems="center"
             >
-              <Link href="#wip">
-                <ArrowDownIcon
-                  boxSize="25px"
-                  color={`rgba(255, 255, 255, ${Math.max(
-                    0,
-                    Math.min(1, 1 - scrollTop / (innerHeight / 2))
-                  )})`}
-                  borderRadius="4px"
-                />
-              </Link>
+              <ArrowDownIcon
+                boxSize="2vw"
+                color={`rgba(255, 255, 255, ${Math.max(
+                  0,
+                  Math.min(1, 1 - scrollTop / (innerHeight / 2))
+                )})`}
+                borderRadius="4px"
+              />
             </Box>
-          </>
+          </Link>
         )}
         <div
           style={{
