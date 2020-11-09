@@ -110,13 +110,15 @@ export default function Home() {
             top="100vh"
           >
             <Divider
+              position="relative"
               width="100%"
               preserveAspectRatio="none"
               height="10vh"
               color="gray.200"
+              top="1px"
             />
           </Box>
-          {/* <Heading
+          <Heading
             alignSelf="center"
             as="h1"
             size="2xl"
@@ -128,22 +130,8 @@ export default function Home() {
             textShadow="1px 3px 6px rgba(0, 0, 0, .1)"
             fontFamily="'Sansation Regular'"
           >
-            Contact Me
+            Work in Progress
           </Heading>
-          <Text
-            maxW="6xl"
-            fontSize="1.2em"
-            fontFamily="'Sansation Regular'"
-            paddingX="0.3rem"
-            background="linear-gradient(90deg, rgba(224, 48, 47, 1) 0%, rgba(50, 129, 221, 1) 100%)"
-            borderRadius="5px"
-            color="gray.200"
-          >
-            Email to:{" "}
-            <Link href="mailto:jakob.kraus10@gmail.com" isExternal>
-              jakob.kraus10@gmail.com
-            </Link>
-          </Text> */}
         </Stack>
       </ChakraProvider>
     </div>
