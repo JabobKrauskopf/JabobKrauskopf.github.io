@@ -49,20 +49,20 @@ export default function Home() {
           <Link href="#top">
             <Box
               position="fixed"
-              boxSize="2vw"
+              boxSize="2rem"
               top="85vh"
-              right="1vw"
+              right="1rem"
               zIndex="19"
               background={`rgba(0, 0, 0, ${
                 Math.max(0, Math.min(1, scrollTop / (innerHeight / 2))) * 0.2
               })`}
-              borderRadius="4px"
+              borderRadius="0.3rem"
             />
             <Box
               position="fixed"
-              boxSize="2vw"
+              boxSize="2rem"
               top="85vh"
-              right="1vw"
+              right="1rem"
               zIndex="20"
               style={{ mixBlendMode: "difference" }}
               display="grid"
@@ -70,12 +70,11 @@ export default function Home() {
               cursor={scrollTop / (innerHeight / 2) < 2 ? "pointer" : "unset"}
             >
               <ArrowUpIcon
-                boxSize="2vw"
+                boxSize="2rem"
                 color={`rgba(255, 255, 255, ${Math.max(
                   0,
                   Math.min(1, scrollTop / (innerHeight / 2))
                 )})`}
-                borderRadius="4px"
               />
             </Box>
           </Link>
@@ -84,21 +83,21 @@ export default function Home() {
           <Link href="#wip">
             <Box
               position="fixed"
-              boxSize="2vw"
-              top="90vh"
+              boxSize="2rem"
+              top="calc(85vh + 3rem)"
               right="1vw"
               zIndex="19"
               background={`rgba(0, 0, 0, ${
                 Math.max(0, Math.min(1, 1 - scrollTop / (innerHeight / 2))) *
                 0.2
               })`}
-              borderRadius="4px"
+              borderRadius="0.3rem"
             />
             <Box
               position="fixed"
-              boxSize="2vw"
-              top="90vh"
-              right="1vw"
+              boxSize="2rem"
+              top="calc(85vh + 3rem)"
+              right="1rem"
               zIndex="20"
               style={{ mixBlendMode: "difference" }}
               display="grid"
@@ -110,7 +109,6 @@ export default function Home() {
                   0,
                   Math.min(1, 1 - scrollTop / (innerHeight / 2))
                 )})`}
-                borderRadius="4px"
               />
             </Box>
           </Link>
