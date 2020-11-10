@@ -32,6 +32,7 @@ export default function Home() {
     <>
       <Head>
         <link href="/font.css" rel="stylesheet" type="text/css" />
+        <link href="/favicon.png" rel="icon" type="image/png" />
       </Head>
       <ChakraProvider resetCSS={true}>
         {scrollTop === 0 ? null : (
@@ -131,7 +132,7 @@ export default function Home() {
                 as="h1"
                 size="2xl"
                 width="fit-content"
-                paddingX="0.5rem"
+                paddingX="1rem"
                 color="white"
                 textShadow="1px 3px 6px rgba(0, 0, 0, .1)"
                 fontFamily="'Sansation Regular'"
@@ -142,7 +143,7 @@ export default function Home() {
                 color="white"
                 maxW="6xl"
                 fontSize="1.2em"
-                paddingY="1rem"
+                padding="1rem"
                 fontFamily="'Sansation Regular'"
               >
                 Full Stack Engineer, Data Scientist, Meme Supervisor and Head of
