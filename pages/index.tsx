@@ -7,29 +7,18 @@ import {
   Link,
   Box,
 } from "@chakra-ui/core";
-import { createIcon, ArrowDownIcon, ArrowUpIcon } from "@chakra-ui/icons";
+import { ArrowDownIcon, ArrowUpIcon } from "@chakra-ui/icons";
 import { FaGithub, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
 import Head from "next/head";
-import React, { useLayoutEffect, useRef, useState } from "react";
-
-export const Divider = createIcon({
-  displayName: "Divider",
-  viewBox: "0 0 169 18",
-  path: (
-    <>
-      <path
-        fill="currentColor"
-        d="M0,18C0,18,34.4-11.1,54.8,9s43.1-19.7,66.1-6S169,18,169,18L0,18z"
-      />
-    </>
-  ),
-});
+import React, { useEffect, useRef, useState } from "react";
+import { Logo } from "../components/icons";
+import { Divider } from "../components/utils";
 
 export default function Home() {
   const [scrollTop, setScrollTop] = useState(0);
   const [innerHeight, setInnerHeigth] = useState(0);
   const scrollRef = useRef<HTMLDivElement>();
-  useLayoutEffect(() => {
+  useEffect(() => {
     const onScroll = (e) => {
       setScrollTop(e.target.scrollTop);
     };
@@ -136,6 +125,7 @@ export default function Home() {
               alignItems="center"
               justifyContent="center"
             >
+              <Logo boxSize="150px" />
               <Heading
                 alignSelf="center"
                 as="h1"
