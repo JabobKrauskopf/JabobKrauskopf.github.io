@@ -144,7 +144,7 @@ export default function Home() {
                 color="white"
                 maxW="6xl"
                 fontSize="1.2em"
-                padding="1rem"
+                padding="0.5rem"
                 fontFamily="'Sansation Regular'"
               >
                 Full Stack Engineer, Data Scientist, Meme Supervisor and Head of
@@ -153,7 +153,19 @@ export default function Home() {
                   Limebit GmbH
                 </Link>
               </Text>
-              <Flex justifyContent="center" color="white">
+              <Text
+                color="white"
+                maxW="6xl"
+                fontSize="1.2em"
+                padding="0.5rem"
+                fontFamily="'Sansation Regular'"
+              >
+                Computer Science Student @{" "}
+                <Link href="https://www.tu.berlin" isExternal>
+                  TU Berlin
+                </Link>
+              </Text>
+              <Flex justifyContent="center" color="white" padding="0.5rem">
                 <Stack paddingX="1rem">
                   <Link href="https://github.com/JabobKrauskopf" isExternal>
                     <FaGithub size="32px" />
