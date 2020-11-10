@@ -33,6 +33,7 @@ export default function Home() {
       <Head>
         <link href="/font.css" rel="stylesheet" type="text/css" />
         <link href="/favicon.png" rel="icon" type="image/png" />
+        <title>Jakob Kraus</title>
       </Head>
       <ChakraProvider resetCSS={true}>
         {scrollTop === 0 ? null : (
