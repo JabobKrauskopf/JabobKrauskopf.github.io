@@ -8,7 +8,13 @@ import {
   Box,
 } from "@chakra-ui/core";
 import { ArrowDownIcon, ArrowUpIcon } from "@chakra-ui/icons";
-import { FaGithub, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaTwitter,
+  FaYoutube,
+  FaLinkedin,
+  FaSteam,
+} from "react-icons/fa";
 import Head from "next/head";
 import React, { useEffect, useRef, useState } from "react";
 import { Logo } from "../components/icons";
@@ -191,6 +197,13 @@ export default function Home() {
                   paddingX="1rem"
                 >
                   <FaTwitter size="32px" />
+                </Link>
+                <Link
+                  href="https://steamcommunity.com/id/JabobKrauskopf/"
+                  isExternal
+                  paddingX="1rem"
+                >
+                  <FaSteam size="32px" />
                 </Link>
               </Flex>
             </Stack>
