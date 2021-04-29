@@ -150,11 +150,21 @@ export default function Home() {
                 color="white"
                 maxW="6xl"
                 fontSize="1.2em"
-                padding="0.5rem"
+                marginTop="1rem"
                 fontFamily="'Sansation Regular'"
               >
-                Full Stack Engineer, Data Scientist, Meme Supervisor and Head of
-                Computer Resources @{" "}
+                Core Developer @{" "}
+                <Link href="https://www.opendiscourse.de" isExternal>
+                  Open Discourse
+                </Link>
+              </Text>
+              <Text
+                color="white"
+                maxW="6xl"
+                fontSize="1.2em"
+                fontFamily="'Sansation Regular'"
+              >
+                Data Engineer @{" "}
                 <Link href="https://www.limebit.de" isExternal>
                   Limebit GmbH
                 </Link>
@@ -163,7 +173,7 @@ export default function Home() {
                 color="white"
                 maxW="6xl"
                 fontSize="1.2em"
-                padding="0.5rem"
+                marginBottom="1rem"
                 fontFamily="'Sansation Regular'"
               >
                 Computer Science Student @{" "}
