@@ -150,7 +150,7 @@ export default function Home() {
                 color="white"
                 maxW="6xl"
                 fontSize="1.2em"
-                marginTop="1rem"
+                paddingTop="2rem"
                 fontFamily="'Sansation Regular'"
               >
                 Core Developer @{" "}
@@ -173,7 +173,7 @@ export default function Home() {
                 color="white"
                 maxW="6xl"
                 fontSize="1.2em"
-                marginBottom="1rem"
+                paddingBottom="1rem"
                 fontFamily="'Sansation Regular'"
               >
                 Computer Science Student @{" "}
@@ -182,36 +182,53 @@ export default function Home() {
                 </Link>
               </Text>
               <Flex justifyContent="center" color="white" padding="0.5rem">
-                <Stack paddingX="1rem">
-                  <Link href="https://github.com/JabobKrauskopf" isExternal>
-                    <FaGithub size="32px" />
-                  </Link>
-                </Stack>
+                <Link
+                  href="https://github.com/JabobKrauskopf"
+                  isExternal
+                  marginX="0.8rem"
+                  padding="0.2rem"
+                  borderRadius="5px"
+                  _hover={{ backgroundColor: "rgba(87, 89, 93, 0.2)" }}
+                >
+                  <FaGithub size="32px" />
+                </Link>
                 <Link
                   href="https://www.linkedin.com/in/jakob-kraus-3a7b64189/"
                   isExternal
-                  paddingX="1rem"
+                  marginX="0.8rem"
+                  padding="0.2rem"
+                  borderRadius="5px"
+                  _hover={{ backgroundColor: "rgba(87, 89, 93, 0.2)" }}
                 >
                   <FaLinkedin size="32px" />
                 </Link>
                 <Link
                   href="https://www.youtube.com/channel/UCm0n0k-ePERD0KsBBBw8TpA"
                   isExternal
-                  paddingX="1rem"
+                  marginX="0.8rem"
+                  padding="0.2rem"
+                  borderRadius="5px"
+                  _hover={{ backgroundColor: "rgba(87, 89, 93, 0.2)" }}
                 >
                   <FaYoutube size="32px" />
                 </Link>
                 <Link
                   href="https://twitter.com/JabobKrauskopf"
                   isExternal
-                  paddingX="1rem"
+                  marginX="0.8rem"
+                  padding="0.2rem"
+                  borderRadius="5px"
+                  _hover={{ backgroundColor: "rgba(87, 89, 93, 0.2)" }}
                 >
                   <FaTwitter size="32px" />
                 </Link>
                 <Link
                   href="https://steamcommunity.com/id/JabobKrauskopf/"
                   isExternal
-                  paddingX="1rem"
+                  marginX="0.8rem"
+                  padding="0.2rem"
+                  borderRadius="5px"
+                  _hover={{ backgroundColor: "rgba(87, 89, 93, 0.2)" }}
                 >
                   <FaSteam size="32px" />
                 </Link>
